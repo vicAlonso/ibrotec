@@ -1,20 +1,77 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'PT Serif', serif;}
+    font-family: 'PT Serif', serif, 'Miriam Libre';}
 
 
 nav img {
-    height: 60px;
+    height: 45px;
+}
+
+nav {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+nav a{
+    display: block;
+    position: relative;
+    line-height: 2.15rem;
+    perspective: 12.5rem;
+    transition: all 0.7s linear;
+    padding: 1.9375rem 10.875rem;
+    margin-left: 75px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a:not(.active):hover .link-space {
+    transform: translateZ(-1.5625rem) rotateX(90deg);
+}
+.link-space{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.7s ease-out;
+    transform-style: preserve-3d;
+}
+.fare {
+    transform: rotateX(0deg) translateZ(1.5625rem);
+}
+.back {
+    transform: rotateX(-90deg) translateZ(1.5625rem) ;
+}
+.fare, .back {
+    width: 100%;
+    height: 100%;
+    color: #444;
+    display: block;
+    position: absolute;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0.935rem 4.3995rem;
+}
+
+nav li a:hover .fare,
+nav li a:hover .back{
+    color: #fff;
+    background-color: #444;
+    background-size: 0.3125rem 0.3125rem;
+
 }
 
 .navegacion {
     display: flex;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-content: center;
+    width: 100%;
     transition: 1s ease;
-    
-    
+    text-align: center;
 }
 
 
@@ -58,14 +115,18 @@ section {
 
 }
 
-.texto-centrado h2 {
+.texto-centrado  h2{
     text-align: center;
+    font-family: 'Miriam Libre';
     font-size: 70px;
     margin-bottom: 30px;
+    
 }
 .texto-centrado p {
     font-size: 18px;
+    text-align: justify;
 }
+
 .texto-centrado button {
     width: 350px;
     border-radius: 15px;
@@ -116,7 +177,6 @@ section {
     padding-right: 50px;
     margin-top: 50px;
     border-radius: 10px;
-    
     background-color: #ffffff;
     width: 27%;
     border: solid;
@@ -124,10 +184,13 @@ section {
     -webkit-box-shadow: 2px 2px 5px;
     box-shadow: -15px -15px 6px;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: 1s ease;
     perspective: 800;
     -webkit-perspective: 800;
+    -ms-perspective: 800;
 }
 
 .atras {
@@ -138,11 +201,18 @@ section {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+    transform: rotateY(180deg) translateZ(1px);
+    -ms-transform: rotateY(180deg) translateZ(1px);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
 }
+
+
+
 
 .adelante {
     height:100%;
@@ -155,6 +225,7 @@ section {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -ms-backface-visibility:hidden;
 }
 .adelante i {
     font-size: 70px;
@@ -166,7 +237,9 @@ section {
 }
 
 .tarjeta:hover {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+    transform: rotateY(180deg) translateZ(1px);
+    -ms-transform: rotateY(180deg) translateZ(1px);
 }
 
 .tarjeta button {
@@ -208,9 +281,14 @@ section {
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
+    width: 100%;
     height: 100%;
     transform: translateY(80%);
     transition: 0.8s ease-in-out;
+}
+
+.info h2 {
+    padding-top: 0.5rem;
 }
 
 .box:hover .info {
@@ -230,8 +308,9 @@ footer i {
     font-size: 40px;
     padding-right: 20px;
 }
-footer h3 {
+footer h3{
     padding-bottom: 20px;
+    font-family: Miriam Libre;
 }
 .linea-superior {
     background-color: #fff;
@@ -245,6 +324,11 @@ footer a {
 .formulario {
     display: flex;
 }
+
+#formulario p {
+    text-align: justify;
+}
+
 .for-info {
     width: 20%;
 }
@@ -260,6 +344,60 @@ footer a {
     background-color: #fff;
     color:#2980B9;
 }
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+    
+  }
+
+.swiper-container img {
+    height: 300px;
+    width: 600px;
+
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+
+  }
+  .descrip {
+      background-color: #2BC0E4;
+      position: absolute;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      top: 0;
+      align-items: center;
+      height: 300px;
+      width: 600px;
+      transform: translateY(80%);
+      transition: 0.8s ease-in-out;
+    
+  }
+
+  .swiper-container:hover .descrip {
+
+        transform: translateY(0%);
+  }
+
+
+  .prueba {
+      background-color: tomato;
+      
+      
+  }
+  
+ 
+
 
 @media (max-width:700px) {
 
@@ -305,4 +443,21 @@ footer a {
         padding-bottom: 50px;
     }
 }
+
+@media (max-width:375px) {
+    .texto-centrado h2 {
+        font-size: 55px;
+    }
+    .texto-centrado  button {
+        width: 280px;
+    }
+    .tarjeta {
+        width: 100%;
+    }
+    .info {
+        transform: translateY(65%);
+    }
+}
+
+
 
