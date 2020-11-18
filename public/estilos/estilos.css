@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif, 'Miriam Libre';}
+body {
+overflow-x: hidden;
+}
 
 
 nav img {
