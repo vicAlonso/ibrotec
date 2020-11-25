@@ -390,6 +390,10 @@ footer a {
     .box {
         width: 45%;
     }
+    
+    .swiper-container {
+        background-color: red;
+    }
 }
 
 @media (max-width:550px) {
@@ -426,6 +430,9 @@ footer a {
         
         
         }
+    .swiper-container {
+        background-color: palevioletred;
+    }
 }
 
 @media (max-width:375px) {
@@ -446,6 +453,9 @@ footer a {
         height: 150px;
         
         }
+    .swiper-container {
+        background-color: blue;
+    }
 }
 
 
