@@ -352,52 +352,27 @@ footer a {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
+    /*position: relative;*/
+    height: 100%;
+    margin: 80px 0;
 
     
   }
 
-.swiper-container img {
-    height: 300px;
-    width: 600px;
-
-}
-
-
-.swiper-slide {
+  .swiper-slide {
     background-position: center;
     background-size: cover;
     object-fit: contain;
-    width: 100%;
     height: 100%;
+    width: 100%;
+   
 
   }
-  .descrip {
-      background-color: #2BC0E4;
-      position: absolute;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      top: 0;
-      align-items: center;
-      height: 300px;
-      width: 600px;
-      transform: translateY(80%);
-      transition: 0.8s ease-in-out;
+  .swiper-container img {
+    width: 600px;
+    height: 300px;
     
-  }
-
-  .swiper-container:hover .descrip {
-
-        transform: translateY(0%);
-  }
-
-
-  .prueba {
-      background-color: tomato;
-      
-      
-  }
+    }
   
  
 
@@ -445,6 +420,12 @@ footer a {
     .button {
         padding-bottom: 50px;
     }
+      .swiper-container img {
+        width: 400px;
+        height: 200px;
+        
+        
+        }
 }
 
 @media (max-width:375px) {
@@ -460,6 +441,11 @@ footer a {
     .info {
         transform: translateY(65%);
     }
+     .swiper-container img {
+        width: 300px;
+        height: 150px;
+        
+        }
 }
 
 
