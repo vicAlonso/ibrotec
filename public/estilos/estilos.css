@@ -433,7 +433,7 @@ footer a {
 
 @media (max-width:375px) {
     .texto-centrado h2 {
-        font-size: 51px;
+        font-size: 47px;
     }
     .texto-centrado  button {
         width: 280px;
@@ -445,7 +445,7 @@ footer a {
         transform: translateY(65%);
     }
      .swiper-container img {
-        width: 300px;
+        width: 270px;
         height: 150px;
         
         }
