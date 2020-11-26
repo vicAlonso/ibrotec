@@ -348,32 +348,7 @@ footer a {
     color:#2980B9;
 }
 
-.swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    /*position: relative;*/
-    height: 100%;
-    margin: 80px 0;
 
-    
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-   
-
-  }
-  .swiper-container img {
-    width: 600px;
-    height: 300px;
-    
-    }
-  
  
 
 
@@ -422,12 +397,6 @@ footer a {
     .button {
         padding-bottom: 50px;
     }
-      .swiper-container img {
-        width: 400px;
-        height: 200px;
-        
-        
-        }
     
 }
 
@@ -444,11 +413,7 @@ footer a {
     .info {
         transform: translateY(65%);
     }
-     .swiper-container img {
-        width: 270px;
-        height: 150px;
-        
-        }
+     
     
 }
 
